@@ -5,16 +5,28 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="设置hexo deploy每次使用 hexo generate后再使用hexo deploy都得输入一次usename和password,好麻烦，就想着能不能一次性解决。用Google搜了下。找到两篇网页：https://git-scm.com/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%">
+  <meta name="description" content="设置hexo deploy每次使用 hexo generate后再使用hexo deploy都得输入一次usename和password,好麻烦，就想着能不能一次性解决。
+用Google搜了下。找到两篇网页：&amp;gt;生成 SSH 公钥&amp;gt;利用SSH省去在hexo deploy输入密码
+可是设置好了SSH公钥,想要把传输改为ssh协议却总是报错
+首先，很难确定 .deploy/ 文件的位置
+使用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2016/06/26/hexo deploy/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="设置hexo deploy每次使用 hexo generate后再使用hexo deploy都得输入一次usename和password,好麻烦，就想着能不能一次性解决。用Google搜了下。找到两篇网页：https://git-scm.com/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%">
-<meta property="og:updated_time" content="2016-06-26T12:58:34.000Z">
+<meta property="og:description" content="设置hexo deploy每次使用 hexo generate后再使用hexo deploy都得输入一次usename和password,好麻烦，就想着能不能一次性解决。
+用Google搜了下。找到两篇网页：&amp;gt;生成 SSH 公钥&amp;gt;利用SSH省去在hexo deploy输入密码
+可是设置好了SSH公钥,想要把传输改为ssh协议却总是报错
+首先，很难确定 .deploy/ 文件的位置
+使用">
+<meta property="og:updated_time" content="2016-06-26T13:06:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="设置hexo deploy每次使用 hexo generate后再使用hexo deploy都得输入一次usename和password,好麻烦，就想着能不能一次性解决。用Google搜了下。找到两篇网页：https://git-scm.com/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%">
+<meta name="twitter:description" content="设置hexo deploy每次使用 hexo generate后再使用hexo deploy都得输入一次usename和password,好麻烦，就想着能不能一次性解决。
+用Google搜了下。找到两篇网页：&amp;gt;生成 SSH 公钥&amp;gt;利用SSH省去在hexo deploy输入密码
+可是设置好了SSH公钥,想要把传输改为ssh协议却总是报错
+首先，很难确定 .deploy/ 文件的位置
+使用">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -75,12 +87,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="设置hexo-deploy"><a href="#设置hexo-deploy" class="headerlink" title="设置hexo deploy"></a>设置hexo deploy</h1><p>每次使用 hexo generate后再使用hexo deploy都得输入一次usename和password,<br>好麻烦，就想着能不能一次性解决。<br>用Google搜了下。找到两篇网页：<br><a href="https://git-scm.com/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5" target="_blank" rel="external">https://git-scm.com/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5</a><br><a href="http://eesly.github.io/2014/10/26/%E5%88%A9%E7%94%A8ssh%E7%9C%81%E5%8E%BB%E5%9C%A8hexo-deploy%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81/" target="_blank" rel="external">http://eesly.github.io/2014/10/26/%E5%88%A9%E7%94%A8ssh%E7%9C%81%E5%8E%BB%E5%9C%A8hexo-deploy%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81/</a><br>可是设置好了SSH公钥<br>想要把传输改为ssh协议却总是报错<br>首先，很难确定 .deploy/ 文件的位置<br>使用 origin 也不行，总是报 fatal: No such remote ‘origin’<br>无从下手，希望能快点解决吧。</p>
+        <h1 id="设置hexo-deploy"><a href="#设置hexo-deploy" class="headerlink" title="设置hexo deploy"></a>设置hexo deploy</h1><p>每次使用 hexo generate后再使用hexo deploy都得输入一次usename和password,<br>好麻烦，就想着能不能一次性解决。</p>
+<p>用Google搜了下。找到两篇网页：<br>&gt;<br><a href="https://git-scm.com/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5" target="_blank" rel="external">生成 SSH 公钥</a><br>&gt;<br><a href="http://eesly.github.io/2014/10/26/%E5%88%A9%E7%94%A8ssh%E7%9C%81%E5%8E%BB%E5%9C%A8hexo-deploy%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81/" target="_blank" rel="external">利用SSH省去在hexo deploy输入密码</a></p>
+<p>可是设置好了SSH公钥,想要把传输改为ssh协议却总是报错</p>
+<p>首先，很难确定 .deploy/ 文件的位置</p>
+<p>使用 origin 也不行，总是报 fatal: No such remote ‘origin’</p>
+<p>无从下手，希望能快点解决吧。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/26/hexo deploy/" data-id="cipwlq3og0001sv63hl45zcav" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/26/hexo deploy/" data-id="cipwm0iky0001vi63qk0l661y" class="article-share-link">Share</a>
       
       
     </footer>
