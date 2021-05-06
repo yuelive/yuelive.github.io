@@ -33,3 +33,61 @@ git commit -m 'changed' # 提交
 git push origin hexo # 推送到远程仓库的 hexo 分支
 ```
 
+操作完成：
+
+![image-20210506114346103](https://i.loli.net/2021/05/06/eDSvjJhQpk35Ngu.png)
+
+打开`https://github.com/lecsven/lecsven.github.io`查看状态
+
+![image-20210506114555327](https://i.loli.net/2021/05/06/5xFVDezwglsQT6f.png)
+
+确认静态文件已经正确上传：
+
+![image-20210506114652456](https://i.loli.net/2021/05/06/wfSCbmg5dEuhTol.png)
+
+**接下来部署静态文件，使得内容可以在网页上面正常显示**
+
+
+
+在`H:\Dropbox\all-blog\lecsven.github.io`文件夹下面的`_config.yml`里面
+
+确保如下设置：
+
+```yaml
+deploy:
+  type: git
+  repository: https://github.com/lecsven/lecsven.github.io.git
+  branch: master
+```
+
+`  branch: master`能够让部署的文件直接上传到`master`分支
+
+开始部署：
+
+```shell
+hexo clean # 清理缓存
+hexo g # 生成静态文件
+hexo s # 本地预览
+hexo d # 部署（跟 _config.yml 文件中的 deploy 选项相关）
+
+```
+
+本地预览：
+
+![image-20210506120027729](https://i.loli.net/2021/05/06/lmDcVPaQwBWNSTH.png)
+
+部署完成：
+
+![image-20210506120131026](https://i.loli.net/2021/05/06/uYSh3AQIrTmP7tC.png)
+
+打开master分支确保最新的文件已更新
+
+![image-20210506120254668](https://i.loli.net/2021/05/06/nFQZgJ15vwRctki.png)
+
+在Github Page 查看下效果：
+
+![image-20210506120535125](https://i.loli.net/2021/05/06/q5diXnsH7RAz2C4.png)
+
+大功告成！
+
+以上就是发表Github Page 的常用操作，做个备忘。
