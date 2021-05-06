@@ -91,3 +91,13 @@ hexo d # 部署（跟 _config.yml 文件中的 deploy 选项相关）
 大功告成！
 
 以上就是发表Github Page 的常用操作，做个备忘。
+
+参考文章：
+
+https://www.sulinehk.com/post/hexo-backup-reset/
+
+https://zhuanlan.zhihu.com/p/127027266
+
+https://www.cnblogs.com/ljy2013/p/5547993.html
+
+https://lvraikkonen.github.io/2016/05/31/%E5%88%A9%E7%94%A8Github%E5%88%86%E6%94%AF%E5%A4%87%E4%BB%BDHexo%E6%BA%90%E6%96%87%E4%BB%B6/
