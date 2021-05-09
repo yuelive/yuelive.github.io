@@ -6,7 +6,7 @@ tags:
 
 今天在Mac 上面写文章然后上传到Github Page的时候遇到了这个问题：
 
-![image-20210509112456620](/Users/lecsven/Library/Application Support/typora-user-images/image-20210509112456620.png)
+![image-20210509112456620](https://tva1.sinaimg.cn/large/008i3skNgy1gqcizqt9bxj315i098dhw.jpg)
 
 原因应该是我的Mac 上面没有配置好GitHub的ssh key
 
@@ -35,7 +35,7 @@ Your public key has been saved in /Users/lecsven/.ssh/id_rsa.pub.
 
 新建SSH key:
 
-![image-20210509113633697](/Users/lecsven/Library/Application Support/typora-user-images/image-20210509113633697.png)
+![image-20210509113633697](https://tva1.sinaimg.cn/large/008i3skNgy1gqcizxa6g0j31in0u046i.jpg)
 
 粘贴进去，点击保存：
 
