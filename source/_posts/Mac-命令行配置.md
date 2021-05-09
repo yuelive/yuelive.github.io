@@ -10,7 +10,11 @@ tags:
 
 使用下面命令设置默认shell
 
-`chsh -s /bin/zsh`
+``` shell
+chsh -s /bin/zsh
+```
+
+
 
 如果想修改回默认dash，同样使用chsh命令即可：
 
