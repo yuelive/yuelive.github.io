@@ -55,7 +55,7 @@ https://www.bilibili.com/video/av32221153/
 
 ![Snipaste_2020-12-06_18-16-54](https://i.loli.net/2021/05/11/hXsurnepKLvxq9T.jpg)
 
-H:\Dropbox\0081Kckwgy1gleaz2l04cj31gw0u04qp.png
+
 
 我们要把图片修改成多看自带的**交互图**方式。
 
