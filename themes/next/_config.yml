@@ -140,6 +140,7 @@ sidebar:
   # Sidebar Position.
   position: left
   #position: right
+  #padding: 18
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -151,7 +152,9 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: post
+  display: always
+  
+
 
   # Sidebar padding in pixels.
   padding: 18
@@ -177,9 +180,9 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
-  #Weibo: https://weibo.com/yourname || fab fa-weibo
+  GitHub: https://github.com/lecsven || fab fa-github
+  E-Mail: lecsven@gmail.com || fa fa-envelope
+  Weibo: https://weibo.com/u/1250756295 || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
@@ -995,3 +998,5 @@ vendors:
 css: css
 js: js
 images: images
+
+
