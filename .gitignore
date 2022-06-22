@@ -2,6 +2,15 @@
 Thumbs.db
 db.json
 *.log
+# node 插件文件
 node_modules/
+# 静态文件
 public/
 .deploy*/
+# json 文件
+/package-lock.json
+/db.json
+# 包含密码的配置文件
+/_config.yml
+/themes/next/_config.yml
+_multiconfig.yml
